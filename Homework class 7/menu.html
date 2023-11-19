@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="home.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+            </ul>
+        </nav>
+
+        <form>
+            <label for="search">Search</label>
+            <input type="search" id="search">
+            <button type="submit">Submit</button>
+        </form>
+        <img src="https://i.pinimg.com/originals/1d/e6/66/1de666cfe8b794da607b317b6165fdcd.jpg" alt="Burgers"
+            class="logo" width="5%">
+    </header>
+    <main>
+        <h1>Order Here</h1>
+
+        <br>
+
+        <p style="margin: 5px 0;">Available Monday through Friday</p>
+        <p style="margin: 5px 0;">11am - 3pm</p>
+
+
+
+
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Order information</legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required />
+                <br>
+                <label>Order type:</label>
+                <input type="radio" name="order" id="here" value="Here" />
+                <label for="here">Here</label>
+                <input type="radio" name="order" id="togo" value="To Go" />
+                <label for="togo">To Go</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Burger Options</legend>
+                <label><strong>Monday</strong></label>
+                <br>
+                <input type="radio" name="MondayBurger" id="classicBurger" value="Classic Burger - $5.99" />
+                <label for="classicBurger">Classic Burger - $5.99</label>
+                <br>
+                <input type="radio" name="MondayBurger" id="cheeseburger" value="Cheeseburger - $6.49" />
+                <label for="cheeseburger">Cheeseburger - $6.49</label>
+                <br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Side - Fries</legend>
+                <label><strong>Fries</strong></label>
+                <br>
+                <input type="radio" name="fries" id="regularFries" value="Regular Fries - $2.49" />
+                <label for="regularFries">Regular Fries - $2.49</label>
+                <br>
+                <input type="radio" name="fries" id="curlyFries" value="Curly Fries - $2.99" />
+                <label for="curlyFries">Curly Fries - $2.99</label>
+                <br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Side - Onion Rings</legend>
+                <label><strong>Onion Rings</strong></label>
+                <br>
+                <input type="radio" name="onionRings" id="regularOnionRings" value="Regular Onion Rings - $3.49" />
+                <label for="regularOnionRings">Regular Onion Rings - $3.49</label>
+                <br>
+                <input type="radio" name="onionRings" id="batteredOnionRings" value="Battered Onion Rings - $3.99" />
+                <label for="batteredOnionRings">Battered Onion Rings - $3.99</label>
+                <br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Drink</legend>
+                <label for="drinks">Select a drink:</label>
+                <select name="drinks" id="drinks">
+                    <option value="" disabled selected>Please select</option>
+                    <option value="Coke - $1.49">Coke - $1.49</option>
+                    <option value="Pepsi - $1.49">Pepsi - $1.49</option>
+                    <option value="Sprite - $1.49">Sprite - $1.49</option>
+                    <option value="Iced Tea - $1.29">Iced Tea - $1.29</option>
+                    <option value="Lemonade - $1.49">Lemonade - $1.49</option>
+                    <option value="Root Beer - $1.49">Root Beer - $1.49</option>
+                    <option value="Orange Soda - $1.49">Orange Soda - $1.49</option>
+                </select>
+                <br>
+                <input type="checkbox" name="large" id="large" value="Large Drinks (+$0.75 extra)" />
+                <label for="large">Large Drinks (+$0.75 extra)</label>
+            </fieldset>
+            <br>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <p>Address: 123 Burger Street, Skopje</p>
+                <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+                <p>Email: <a href="mailto:info@seavusburgers.com">info@seavusburgers.com</a></p>
+            </div>
+            <div class="footer-section social-media">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/SEDCfanpage" class="icon-link" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fseavus" class="icon-link"
+                        target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com/sedc_education/" class="icon-link" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-disclaimer">
+            <p>&copy; 2023 Seavus Burgers. All rights reserved.</p>
+            <p>Designed by Ilija</p>
+        </div>
+    </footer>
+</body>
+
+</html>
